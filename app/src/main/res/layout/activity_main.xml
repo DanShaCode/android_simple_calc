@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <!-- Верхняя часть экрана с результатом операции -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <!-- Кнопки калькулятора -->
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#F4A460"
+            android:text="+" />
+
+        <!-- -->
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#F4A460"
+            android:text="-" />
+
+        <!-- -->
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#F4A460"
+            android:text="/" />
+
+        <!-- -->
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#696969"
+            android:text="." />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnWeight="2"
+            android:layout_columnSpan="2"
+            android:backgroundTint="#696969"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#F4A460"
+            android:text="*" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C0C0C0"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F4A460"
+            android:text="=" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
